@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #1F271B;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border: 7px  red;
+}
+
+div{
+    caret-color: transparent;
+}
+.cont{
+    border:5px dashed #ee17bf; 
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.d1{
+    flex-grow:1;
+    align-self: stretch;
+    bottom: 50%;
+    margin-top: 3%;
+
+    border:5px solid #F2D0A4; 
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 4px;
+    
+}
+.d2{
+    
+    flex-grow:1;
+    align-self: stretch;
+    border:5px solid #EF7B45; 
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    padding: 4px;
+}
+.d3{
+    
+    flex-grow:1;
+    align-self: stretch;
+    border:5px solid #5EB1BF; 
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 2px;
+}
+.d4{
+    
+    flex-grow:1;
+    align-self: stretch;
+    border:5px solid #A4303F; 
+    border-radius: 50%;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    animation-name: spin;
+    animation-duration: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+}
+
+@keyframes spin{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    8.33333%{
+        transform: rotateZ(30deg);
+    }
+    16.66666%{
+        transform: rotateZ(60deg);
+    }
+    24.99999%{
+        transform: rotateZ(90deg);
+    }
+    33.33332%{
+        transform: rotateZ(120deg);
+    }
+    41.66665%{
+        transform: rotateZ(150deg);
+    }
+    49.99998%{
+        transform: rotateZ(180deg);
+    }
+    58.33331%{
+        transform: rotateZ(210deg);
+    }
+    66.66664%{
+        transform: rotateZ(240deg);
+    }
+    74.99997%{
+        transform: rotateZ(270deg);
+    }
+    83.3333%{
+        transform: rotateZ(300deg);
+    }
+    91.66663%{
+        transform: rotateZ(330deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.h3c{
+    color: aliceblue;
+    position:absolute;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+/* @keyframes spin{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(-324deg);
+    }
+} */
+
+/*  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
